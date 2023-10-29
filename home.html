@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+
+	<section class="home-banner-area relative" id="home">
+		<div class="container">
+			<div class="row fullscreen d-flex align-items-center">
+				<div class="banner-content col-lg-5 col-md-12">
+					<h2>The international Student Center (ISC)</h2><br>
+					<h6>This is the place our mission is housed.
+						<br><br>For nearly 70 years, AGC has operated the International Student Center,
+						 a hostel, which has served as a catalyst - fostering transformational 
+						 experiences, in an accessible and affordable way.
+						  Our center offers unique gathering spaces for intimate programs and events.
+						<br><br>Education and exploration for students, lifelong learners, and world travelers.
+						<br>We bring the inspiration,
+						You change the world.</h6>
+				</div>
+			</div>
+		</div>
+	</section>
+	<br><br>
+     <div class="image-container">
+        <img src="{% static 'website/img/Screenshot 2023-10-13 at 8.14.19 PM.png' %}" alt="Image 1">
+        <img src="{% static 'website/img/Screenshot 2023-10-13 at 8.14.30 PM.png' %}" alt="Image 2">
+        <img src="{% static 'website/img/Screenshot 2023-10-13 at 8.14.40 PM.png' %}" alt="Image 3">
+    </div>
+	<section class=" section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="single-news card">
+						<img class="card-top-img" src="{% static 'website/img/Screenshot 2023-10-13 at 8.47.00 PM.png' %}" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#">Global Diplomacy</a>
+							</h4>
+							<p class="card-text">Programs to promote an active, engaged, and more representative citizenry 
+								in collaboration with the World Federation of United Nations Associations (WFUNA).</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-news card">
+						<img class="card-top-img" src="{% static 'website/img/Screenshot 2023-10-13 at 8.47.32 PM.png' %}"  alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#">International Counselor Exchange Program (ICEP)</a>
+							</h4>
+							<p class="card-text">We help international employees find summer jobs.
+								 In 2024, this revolutionary effort is anticipated to resume.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-news card">
+						<img class="card-top-img" src="{% static 'website/img/Screenshot 2023-10-13 at 8.49.21 PM.png' %}" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#">Arts For PEACE</a>
+							</h4>
+							<p class="card-text">PeaceEducationArtCultureExposure</p>
+							<br>Exhibitions, Performances, Lecture, Workshops, Masterclasses, Film. and Literary Events.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	{% endblock %} 

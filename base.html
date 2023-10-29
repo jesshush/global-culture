@@ -1,0 +1,96 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<!-- {% static 'website/' %} -->
+<head>
+	<meta charset="UTF-8">
+<!-- Title -->
+	<title>Global Culture Connection</title>
+	<link rel="stylesheet" href="{% static 'website/css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'website/css/bootstrap.css' %}">
+<link rel="stylesheet" href="{% static 'website/css/main.css' %}">
+
+	<style>
+        .image-container {
+            display: flex;
+        }
+
+        .image-container img {
+            width: 33.33%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<!--header-->
+<body>
+	<header id="header" id="home">
+		<hr>
+		<div class="container main-menu">
+			<div class="row align-items-center justify-content-between d-flex">
+				<div id="logo">
+					<a href="{% url 'home' %}"><img src="{% static 'website/img/Screenshot 2023-10-11 at 7.02.23 PM.png' %}" width="100" height= "100" alt="GCC" /></a>
+				</div>
+				<nav id="nav-menu-container">
+					<ul class="nav-menu">
+						<li><a href="{% url 'home' %}">HOME</a></li>
+						<li class="menu-active"><a href="{% url 'about' %}">ABOUT US</a></li>
+						<li><a href="{% url 'signin' %}">SIGN IN</a></li>
+						<li><a href="{% url 'contact' %}">CONTACT</a></li>
+						<li><a href="{% url 'connect' %}">CONNECT</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+{% block content %}
+
+
+{% endblock %} 
+
+	<!--footer-->
+	<footer class="footer-area section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="single-footer-widget newsletter">
+						<h6>Association for GLOBAL CULTURE Inc. (AGC), United Nations</h6>
+						
+						<p>38 West 88th Street, New York, New York 10024 USA
+							<BR>PH: (212) 123- 4567 | WHATSAPP: +1(234) 567-890
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3  col-md-12">
+					<div class="single-footer-widget mail-chimp">
+						<h6 class="mb-20">Instragram Feed</h6>
+						<ul class="instafeed d-flex flex-wrap">
+							<li><img src="{% static 'website/img/img/i1.jpg' %}" alt=""></li>
+							<li><img src="{% static 'website/img/img/i2.jpg' %}" alt=""></li>
+							<li><img src="{% static 'website/img/img/i3.jpg' $}" alt=""></li>
+							<li><img src="{% static 'website/img/img/i4.jpg' %}" alt=""></li>
+							<li><img src="{% static 'website/img/img/i5.jpg' %}" alt=""></li>
+							<li><img src="{% static 'website/img/img/i6.jpg' %}" alt=""></li>
+							<li><img src="{% static 'website/img/img/i7.jpg' %}" alt=""></li>
+							<li><img src="{% static 'website/img/img/i8.jpg' %}" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+
+				<div class="footer-social d-flex align-items-center">
+					<a href="https://www.facebook.com/unesco/"><i class="fa fa-facebook"></i></a>
+					<a href="https://www.linkedin.com/company/unesco/"><i class="fa fa-linkedin"></i></a>
+					<a href="https://www.instagram.com/unitednations/?hl=en"><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+</body>
+
+</html>

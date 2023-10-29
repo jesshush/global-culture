@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!-- {% static 'website/img/' %} -->
+	<section class="banner-area relative" id="home">
+		<div class="container">
+			<div class="row d-flex align-items-center justify-content-center">
+				<div class="about-content col-lg-12">
+					<h1 class=" text-white text-uppercase">
+						About Us
+					</h1>
+					<p class=" link-nav"><a href="index.html">Home  --> </a><a href="about us.html">
+							About Us</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+<!--2nd body-->
+	<section class="latest-news-area section-gap">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-12">
+					<div class="main-title text-center">
+						<h1>What we do</h1>
+						<p>Welcome to the Association for Global Culture, 
+							where diversity meets unity, and traditions bridge continents. 
+							Our association is dedicated to celebrating, preserving, 
+							and promoting the rich tapestry of cultures that make up our world. 
+							We believe that through understanding and appreciation of each other's 
+							cultural heritage, we can foster global harmony, mutual respect, 
+							and a brighter future for all.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="single-news card">
+						<img class="card-top-img" src="{% static 'website/img/Screenshot 2023-10-13 at 7.08.39 PM.png' %}" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#">OUR MISSION</a>
+							</h4>
+							<p class="card-text">At the heart of our association lies a profound mission:
+								To foster cultural exchange, intercultural understanding, and unity among individuals, 
+								communities, and nations worldwide.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-news card">
+						<img class="card-top-img" src="{% static 'website/img/Screenshot 2023-10-13 at 7.09.35 PM.png' %}" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#">OUR VISION</a>
+							</h4>
+							<p class="card-text">We envision a world where cultural diversity is
+								 celebrated as a source of strength, is cherished and preserved, 
+								 and where people of all backgrounds come together to create a more inclusive and harmonious global society.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-news card">
+						<img class="card-top-img" src="{% static 'website/img/Screenshot 2023-10-13 at 7.16.06 PM.png' %}" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">
+								<a href="#">Life Advice Looking At Window
+								</a>
+							</h4>
+							<p class="card-text">We believe in preserving and celebrating the cultural heritage, 
+								fostering understanding, and combating stereotypes by valueing inclusivity and diversity and also advocating for cultural rights.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+
+	{% endblock %} 

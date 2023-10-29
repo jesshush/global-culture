@@ -1,0 +1,47 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+	<section class="banner-area relative" id="home">
+		<div class="container">
+			<div class="row d-flex align-items-center justify-content-center">
+				<div class="about-content col-lg-12">
+					<h1 class="text-white text-uppercase">
+						SIGN IN
+					</h1>
+					<p class="text-white link-nav"><a href="index.html">Home --></a><a href="portfolio.html">
+							Sign In</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact-page-area section-gap">
+		<div class="container">
+			
+				<div class="col-lg-19">
+					<form class="form-area contact-form text-right" id="myForm" action="mail.php" method="post">
+						<div class="row">
+							<div class="col-lg-6">
+								<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'"
+								 class="common-input mb-20 form-control" required="" type="text"><br>
+
+								<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''"
+								 onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email"><br>
+							
+								 <input name="password" placeholder="Enter password"  onfocus="this.placeholder = ''"
+								 onblur="this.placeholder = 'Enter password'" class="common-input mb-20 form-control" required="" type="password">
+							
+							</div>
+							<div class="col-lg-8 mt-10">
+								<div class="alert-msg" style="text-align: centre;" ></div>
+								<button class="primary-btn primary" style="float: centre;">SIGN IN</button>
+							</div>
+						</div>
+					</form>
+				</div>
+	
+		</div>
+	</section>
+	{% endblock %} 
